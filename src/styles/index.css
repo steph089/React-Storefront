@@ -1,0 +1,1060 @@
+/* 
+ascii text from:
+https://patorjk.com/software/taag 
+cause let's be honest, you wanna see it on that little preview on the right side of VSCode
+*/ 
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  background: #fecef1a3;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper{
+  max-width: 1280px;
+  margin: auto;
+  
+}
+
+/* 
+.__                         
+|  |__   ___________  ____  
+|  |  \_/ __ \_  __ \/  _ \ 
+|   Y  \  ___/|  | \(  <_> )
+|___|  /\___  >__|   \____/ 
+     \/     \/             
+*/
+.hero-container {
+  min-height: 480px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+}
+
+.banner-container{
+  min-height: 250px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  margin: .5rem;
+}
+
+.banner-container img{
+  object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+  /* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+/*         
+                   .__              __  .__               
+  ____ _____ ___  _|__| _________ _/  |_|__| ____   ____  
+ /    \\__  \\  \/ /  |/ ___\__  \\   __\  |/  _ \ /    \ 
+|   |  \/ __ \\   /|  / /_/  > __ \|  | |  (  <_> )   |  \
+|___|  (____  /\_/ |__\___  (____  /__| |__|\____/|___|  /
+     \/     \/       /_____/     \/                    \/  */
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #283845;
+}
+
+.navigation li {
+  float: left;
+}
+
+
+.navigation li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation  li a:hover {
+  background-color: #aec6cf;
+}
+
+.navigation li button {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation  li button:hover {
+  background-color: #aec6cf;
+}
+
+.nav-home {
+  background-color: #F29559;
+}
+
+.nav-home a{
+  color:  #283845 !important
+}
+
+.nav-browse{
+  background-color: #fecef1a3;
+  float: right !important
+}
+/* 
+              .__    .___                         __                  
+   ___________|__| __| _/   _________.__. _______/  |_  ____   _____  
+  / ___\_  __ \  |/ __ |   /  ___<   |  |/  ___/\   __\/ __ \ /     \ 
+ / /_/  >  | \/  / /_/ |   \___ \ \___  |\___ \  |  | \  ___/|  Y Y  \
+ \___  /|__|  |__\____ |  /____  >/ ____/____  > |__|  \___  >__|_|  /
+/_____/               \/       \/ \/         \/            \/      \/ 
+ */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+/* --- Product Filter ---  */
+.filter {
+  background-color: #999;
+  overflow: hidden;
+}
+
+.filter a {
+  float: left;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right !important;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+/* 
+  _____.__.__   __                
+_/ ____\__|  |_/  |_  ___________ 
+\   __\|  |  |\   __\/ __ \_  __ \
+ |  |  |  |  |_|  | \  ___/|  | \/
+ |__|  |__|____/__|  \___  >__|   
+                         \/       
+*/
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.filter-button {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #04AA6D;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: .5rem; 
+  border-radius: 50%;
+}
+
+/* Change the color of links on hover */
+.filter a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.filter a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.filter input[type=text] {
+  padding: .5rem;
+  border: none;
+  margin: .5rem;
+  font-size: 17px;
+  
+}
+
+/*                        .___             __                            .___
+_____________  ____   __| _/_ __   _____/  |_    ____ _____ _______  __| _/
+\____ \_  __ \/  _ \ / __ |  |  \_/ ___\   __\ _/ ___\\__  \\_  __ \/ __ | 
+|  |_> >  | \(  <_> ) /_/ |  |  /\  \___|  |   \  \___ / __ \|  | \/ /_/ | 
+|   __/|__|   \____/\____ |____/  \___  >__|    \___  >____  /__|  \____ | 
+|__|                     \/           \/            \/     \/           \/ 
+*/
+body,
+html {
+  height: 100%;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.flex-centerY-centerX {
+  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.page-wrapper {
+  height: 100%;
+  display: table;
+}
+
+.page-wrapper .page-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.el-wrapper {
+  background-color: #FFF;
+}
+
+@media (max-width: 991px) {
+  .el-wrapper {
+    width: 345px;
+  }
+}
+
+@media (max-width: 767px) {
+  .el-wrapper {
+    width: 290px;
+    margin: 30px auto;
+  }
+}
+
+.el-wrapper:hover .h-bg {
+  left: 0px;
+}
+
+.el-wrapper:hover .price {
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #818181;
+}
+
+.el-wrapper:hover .add-to-cart {
+  left: 50%;
+}
+
+.el-wrapper:hover .img {
+  webkit-filter: blur(7px);
+  -o-filter: blur(7px);
+  -ms-filter: blur(7px);
+  filter: blur(7px);
+  filter: progid:DXImageTransform.Microsoft.Blur(pixelradius='7', shadowopacity='0.0');
+  opacity: 0.4;
+}
+
+.el-wrapper:hover .info-inner {
+  bottom: 155px;
+}
+
+.el-wrapper:hover .a-size {
+  -webkit-transition-delay: 300ms;
+  -o-transition-delay: 300ms;
+  transition-delay: 300ms;
+  bottom: 50px;
+  opacity: 1;
+}
+
+.el-wrapper .box-down {
+  background-color: #F29559;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.el-wrapper .box-up {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.el-wrapper .img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+}
+
+.h-bg {
+  -webkit-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 800ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  width: 660px;
+  height: 100%;
+  background-color: #3f96cd;
+  position: absolute;
+  left: -659px;
+}
+
+.h-bg .h-bg-inner {
+  width: 50%;
+  height: 100%;
+  background-color: #464646;
+}
+
+.info-inner {
+  -webkit-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 400ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+}
+
+.info-inner .p-name,
+.info-inner .p-company {
+  display: block;
+}
+
+.info-inner .p-name {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+.info-inner .p-company {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8c8c8c;
+}
+
+.a-size {
+  -webkit-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 300ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  font-family: 'PT Sans', sans-serif;
+  color: #828282;
+  opacity: 0;
+}
+
+.a-size .size {
+  color: #252525;
+}
+
+.cart {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  
+}
+
+.cart .price {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  transition-delay: 100ms;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #252525;
+}
+
+.cart .add-to-cart {
+  -webkit-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  -o-transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  transition: all 600ms cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -moz-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  -o-transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.18, 1);
+  /* ease-out */
+  -webkit-transition-delay: 100ms;
+  -o-transition-delay: 100ms;
+  transition-delay: 100ms;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.cart .add-to-cart .txt {
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/*
+                       .___             __        .___      __         .__.__   
+_____________  ____   __| _/_ __   _____/  |_    __| _/_____/  |______  |__|  |  
+\____ \_  __ \/  _ \ / __ |  |  \_/ ___\   __\  / __ |/ __ \   __\__  \ |  |  |  
+|  |_> >  | \(  <_> ) /_/ |  |  /\  \___|  |   / /_/ \  ___/|  |  / __ \|  |  |__
+|   __/|__|   \____/\____ |____/  \___  >__|   \____ |\___  >__| (____  /__|____/
+|__|                     \/           \/            \/    \/          \/         
+
+*/ 
+
+
+.background-container{
+  height: 95vh;
+  background: url("../images/background.jpg");
+  perspective: 2px;
+  overflow-x: hidden;
+  object-fit:fill
+}
+
+
+.detail-wrapper {
+  background: #aedaa6;
+  font-family: "Raleway";
+  min-height: 55rem;
+  width: 1280px;
+}
+.detail-wrapper .card {
+  width: 70%;
+  position: absolute;
+  background: white;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  transition: all 0.3s;
+}
+.detail-wrapper .card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.detail-wrapper .card nav {
+  color: #727272;
+  text-transform: uppercase;
+  border-bottom: 2px solid #efefef;
+  font-size: 12px;
+  padding: 2rem;
+}
+
+.detail-wrapper .card nav a{
+  text-decoration: none;
+  
+}
+
+.detail-wrapper .card nav svg{
+  float: left;
+  font-size: 1rem
+}
+
+.detail-wrapper .card nav a .text{
+  padding-left: 1rem;
+  float: left;
+  font-size: 1rem
+}
+
+
+.detail-wrapper .card nav svg.heart {
+  height: 24px;
+  width: 24px;
+  float: right;
+  margin-top: -3px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.detail-wrapper .card nav svg.heart:hover {
+  fill: red;
+}
+.detail-wrapper .card nav svg.arrow {
+  float: left;
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.detail-wrapper .card .photo {
+  padding: 30px;
+  width: 45%;
+  text-align: center;
+  float: left;
+  
+}
+.detail-wrapper .card .photo img {
+  padding: 1rem;
+  object-fit: contain;
+  max-height: 20rem;
+  max-width: 100%;
+}
+.detail-wrapper .card .description {
+  float: left;
+  width: 40%;
+  border-left: 2px solid #efefef;
+  padding: 2rem;
+  height: 20rem;
+}
+.detail-wrapper .card .description h1 {
+  color: #515151;
+  font-weight: 300;
+  padding-top: 15px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+.detail-wrapper .card .description h2 {
+  color: #515151;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.detail-wrapper .card .description h4 {
+  margin: 0;
+  color: #727272;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+.detail-wrapper .card .description p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #727272;
+  padding: 20px 0;
+  margin: 0;
+}
+.detail-wrapper .card .description button {
+  outline: 0;
+  border: 0;
+  background: none;
+  border: 1px solid #d9d9d9;
+  padding: 8px 0px;
+  margin-bottom: 30px;
+  color: #515151;
+  text-transform: uppercase;
+  width: 125px;
+  font-family: inherit;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+.detail-wrapper .card .description button:hover {
+  border: 1px solid #aedaa6;
+  color: #aedaa6;
+  cursor: pointer;
+}
+
+/*
+                      __   
+  ____ _____ ________/  |_ 
+_/ ___\\__  \\_  __ \   __\
+\  \___ / __ \|  | \/|  |  
+ \___  >____  /__|   |__|  
+     \/     \/            
+*/
+.cart-button {
+  float: right !important;
+}
+
+.cart-button button{
+  background-color:  #283845 !important;
+  
+}
+
+.hide {
+  display: none;
+}
+
+.cart-card-container{
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  margin: .5rem;
+}
+
+.cart-card-container img{
+  object-fit: contain;
+  width: 100%;
+}
+
+.cart-card-container .count {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.cart-card-container .remove {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+
+  /* Centered text */
+  .cart-card-container .centered {
+  position: absolute;
+  font-size: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.cart-content {
+  min-height: 3rem;
+  width:1280px;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.cart-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.cart-content a:hover {
+  background-color: #283845;
+}
+
+/* Show the dropdown menu on hover */
+.cart:hover .dropdown-content {
+  display: block;
+}
+
+/*
+       .__                   __                 __   
+  ____ |  |__   ____   ____ |  | ______  __ ___/  |_ 
+_/ ___\|  |  \_/ __ \_/ ___\|  |/ /  _ \|  |  \   __\
+\  \___|   Y  \  ___/\  \___|    <  <_> )  |  /|  |  
+ \___  >___|  /\___  >\___  >__|_ \____/|____/ |__|  
+     \/     \/     \/     \/     \/                  
+*/
+.checkout-list img {
+  object-fit: contain;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.payment .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.payment .container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .7rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.payment a {
+  color: #2196F3;
+}
+
+.payment hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+
+.ordered-container{
+  height: 95vh;
+  background: url("../images/sunset.jpg");
+  perspective: 2px;
+  overflow-x: hidden;
+  object-fit:fill
+}
+
+
+.background-section{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:  80vh;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ordered-icon{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: lightgreen;
+}
+
+.ordered-text{
+  text-align: center;
+  color: #fecef1a3;
+}
+
+.ordered-text p{
+ font-size: xx-small;
+}
